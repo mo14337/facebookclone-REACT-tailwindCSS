@@ -3,12 +3,12 @@ import FacebookLogo from "./assets/facebook.svg"
 function App() {
   return (
 
-    <>
+    
 
-      <div className="container flex  justify-center items-center w-full h-screen bg-gray-100  ">
-        <div className="left mx-14 w-1/3">
+      <div className="container flex md:flex-col lg:flex-row justify-center items-center w-full min-h-screen h-full  bg-gray-100  ">
+        <div className="left md:w-2/3 md:flex md:flex-col  lg:flex-none lg:mx-14 lg:w-1/3">
           <img className="w-80" src={FacebookLogo} alt="mcbc" />
-          <p className=" text-2xl mx-8">Facebook helps you connect and share with the people in your life.</p>
+          <p className=" lg:block hidden text-2xl mx-8">Facebook helps you connect and share with the people in your life.</p>
         </div>
 
 
@@ -31,8 +31,7 @@ function App() {
       </div>
 
 
-    </>
-
+    
   );
 }
 
